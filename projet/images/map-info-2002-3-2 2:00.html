@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9d09935f97404aad9329c2ab0559197e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9d09935f97404aad9329c2ab0559197e" ></div>
+        
+</body>
+<script>    
+    
+            var map_9d09935f97404aad9329c2ab0559197e = L.map(
+                "map_9d09935f97404aad9329c2ab0559197e",
+                {
+                    center: [47.029895, 2.440967],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb050ba3dd5142788bbcd218cede6cf1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+            var marker_b2bc3cbc31d54feb9369e0118559d30a = L.marker(
+                [44.83060073852539, -0.6913999915122986],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_6ace13e9c6c242ad938ae67433752b10 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_a6c8246fac9d4c25bb4999257354b01e = $(`<div id="html_a6c8246fac9d4c25bb4999257354b01e" style="width: 100.0%; height: 100.0%;">                 <b>LFBD informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 39.2 F</li>                     <li>Temperature ressentie: 34.2 F</li>                     <li>Pression atmosphérique : 29.8 inches</li>                     <li>Force du vent : 6 noeuds</li>                     <li>Direction du vent : 190.0 degrée</li>                     <li>Humidité de l'air : 93.2 %</li>                 </ul>             </div>`)[0];
+            popup_6ace13e9c6c242ad938ae67433752b10.setContent(html_a6c8246fac9d4c25bb4999257354b01e);
+        
+
+        marker_b2bc3cbc31d54feb9369e0118559d30a.bindPopup(popup_6ace13e9c6c242ad938ae67433752b10)
+        ;
+
+        
+    
+    
+            marker_b2bc3cbc31d54feb9369e0118559d30a.bindTooltip(
+                `<div>
+                     LFBD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8eaf6da804444969b3c66148664fd2da = L.marker(
+                [43.62110137939453, 1.3789000511169434],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_85a2723a2e3044bf9c5a245e3c0df0ca = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_bc6da00105ca4306b687b706758a1a36 = $(`<div id="html_bc6da00105ca4306b687b706758a1a36" style="width: 100.0%; height: 100.0%;">                 <b>LFBO informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 42.8 F</li>                     <li>Temperature ressentie: 40.0 F</li>                     <li>Pression atmosphérique : 29.9 inches</li>                     <li>Force du vent : 4 noeuds</li>                     <li>Direction du vent : 220.0 degrée</li>                     <li>Humidité de l'air : 93.3 %</li>                 </ul>             </div>`)[0];
+            popup_85a2723a2e3044bf9c5a245e3c0df0ca.setContent(html_bc6da00105ca4306b687b706758a1a36);
+        
+
+        marker_8eaf6da804444969b3c66148664fd2da.bindPopup(popup_85a2723a2e3044bf9c5a245e3c0df0ca)
+        ;
+
+        
+    
+    
+            marker_8eaf6da804444969b3c66148664fd2da.bindTooltip(
+                `<div>
+                     LFBO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37462cff6c0745ca981d09521006c2a9 = L.marker(
+                [42.54059982299805, 9.485300064086914],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_0f6726d1193646769aaa6778d5906eb2 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_2f2aad192f7d4596aea29cbec3fc07aa = $(`<div id="html_2f2aad192f7d4596aea29cbec3fc07aa" style="width: 100.0%; height: 100.0%;">                 <b>LFKB informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 48.2 F</li>                     <li>Temperature ressentie: 48.2 F</li>                     <li>Pression atmosphérique : 29.8 inches</li>                     <li>Force du vent : 2 noeuds</li>                     <li>Direction du vent : 240.0 degrée</li>                     <li>Humidité de l'air : 93.4 %</li>                 </ul>             </div>`)[0];
+            popup_0f6726d1193646769aaa6778d5906eb2.setContent(html_2f2aad192f7d4596aea29cbec3fc07aa);
+        
+
+        marker_37462cff6c0745ca981d09521006c2a9.bindPopup(popup_0f6726d1193646769aaa6778d5906eb2)
+        ;
+
+        
+    
+    
+            marker_37462cff6c0745ca981d09521006c2a9.bindTooltip(
+                `<div>
+                     LFKB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df2b72e0e538401c8127792dc90100cf = L.marker(
+                [41.930599212646484, 8.792799949645996],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_ada1165009294c999141eec92c41f86f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_bb27558c54d3433cbaf7af75fd913a14 = $(`<div id="html_bb27558c54d3433cbaf7af75fd913a14" style="width: 100.0%; height: 100.0%;">                 <b>LFKJ informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 44.6 F</li>                     <li>Temperature ressentie: 39.6 F</li>                     <li>Pression atmosphérique : 29.8 inches</li>                     <li>Force du vent : 8 noeuds</li>                     <li>Direction du vent : 60.0 degrée</li>                     <li>Humidité de l'air : 75.7 %</li>                 </ul>             </div>`)[0];
+            popup_ada1165009294c999141eec92c41f86f.setContent(html_bb27558c54d3433cbaf7af75fd913a14);
+        
+
+        marker_df2b72e0e538401c8127792dc90100cf.bindPopup(popup_ada1165009294c999141eec92c41f86f)
+        ;
+
+        
+    
+    
+            marker_df2b72e0e538401c8127792dc90100cf.bindTooltip(
+                `<div>
+                     LFKJ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8ee0173a2b3405594e220436ec69b6b = L.marker(
+                [45.72639846801758, 5.0777997970581055],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_eb80a3eba37146f1afd229c6acc8109a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_77a9e3e87a92456db4585790ca494c49 = $(`<div id="html_77a9e3e87a92456db4585790ca494c49" style="width: 100.0%; height: 100.0%;">                 <b>LFLL informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 42.8 F</li>                     <li>Temperature ressentie: 39.2 F</li>                     <li>Pression atmosphérique : 29.8 inches</li>                     <li>Force du vent : 5 noeuds</li>                     <li>Direction du vent : 150.0 degrée</li>                     <li>Humidité de l'air : 100.0 %</li>                 </ul>             </div>`)[0];
+            popup_eb80a3eba37146f1afd229c6acc8109a.setContent(html_77a9e3e87a92456db4585790ca494c49);
+        
+
+        marker_d8ee0173a2b3405594e220436ec69b6b.bindPopup(popup_eb80a3eba37146f1afd229c6acc8109a)
+        ;
+
+        
+    
+    
+            marker_d8ee0173a2b3405594e220436ec69b6b.bindTooltip(
+                `<div>
+                     LFLL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcb52d6143e74391b1f939d18d247966 = L.marker(
+                [43.44169998168945, 5.2266998291015625],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_b2ae583edd324dab86cc5cbc96203274 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b9d0b31de5f545f3af2ee313c58c0f3e = $(`<div id="html_b9d0b31de5f545f3af2ee313c58c0f3e" style="width: 100.0%; height: 100.0%;">                 <b>LFML informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 57.2 F</li>                     <li>Temperature ressentie: 57.2 F</li>                     <li>Pression atmosphérique : 29.8 inches</li>                     <li>Force du vent : 11 noeuds</li>                     <li>Direction du vent : 160.0 degrée</li>                     <li>Humidité de l'air : 82.1 %</li>                 </ul>             </div>`)[0];
+            popup_b2ae583edd324dab86cc5cbc96203274.setContent(html_b9d0b31de5f545f3af2ee313c58c0f3e);
+        
+
+        marker_fcb52d6143e74391b1f939d18d247966.bindPopup(popup_b2ae583edd324dab86cc5cbc96203274)
+        ;
+
+        
+    
+    
+            marker_fcb52d6143e74391b1f939d18d247966.bindTooltip(
+                `<div>
+                     LFML
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31b6f84346ef4546ad8d8b3015cca947 = L.marker(
+                [43.64889907836914, 7.208899974822998],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_6ba92dce78804212848420f82203ff98 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_0e2c7081484c4b8494a18509eb92f700 = $(`<div id="html_0e2c7081484c4b8494a18509eb92f700" style="width: 100.0%; height: 100.0%;">                 <b>LFMN informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 53.6 F</li>                     <li>Temperature ressentie: 53.6 F</li>                     <li>Pression atmosphérique : 29.8 inches</li>                     <li>Force du vent : 4 noeuds</li>                     <li>Direction du vent : 350.0 degrée</li>                     <li>Humidité de l'air : 66.7 %</li>                 </ul>             </div>`)[0];
+            popup_6ba92dce78804212848420f82203ff98.setContent(html_0e2c7081484c4b8494a18509eb92f700);
+        
+
+        marker_31b6f84346ef4546ad8d8b3015cca947.bindPopup(popup_6ba92dce78804212848420f82203ff98)
+        ;
+
+        
+    
+    
+            marker_31b6f84346ef4546ad8d8b3015cca947.bindTooltip(
+                `<div>
+                     LFMN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35fa33a832024f03adb28ce225f153e4 = L.marker(
+                [49.01530075073242, 2.53439998626709],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_7925940e632d4e138d7c7c6156dd3898 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_a3e73169a30b4a55aed6bd5b4ceb0ecb = $(`<div id="html_a3e73169a30b4a55aed6bd5b4ceb0ecb" style="width: 100.0%; height: 100.0%;">                 <b>LFPG informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 41.0 F</li>                     <li>Temperature ressentie: 32.8 F</li>                     <li>Pression atmosphérique : 29.9 inches</li>                     <li>Force du vent : 14 noeuds</li>                     <li>Direction du vent : 40.0 degrée</li>                     <li>Humidité de l'air : 80.9 %</li>                 </ul>             </div>`)[0];
+            popup_7925940e632d4e138d7c7c6156dd3898.setContent(html_a3e73169a30b4a55aed6bd5b4ceb0ecb);
+        
+
+        marker_35fa33a832024f03adb28ce225f153e4.bindPopup(popup_7925940e632d4e138d7c7c6156dd3898)
+        ;
+
+        
+    
+    
+            marker_35fa33a832024f03adb28ce225f153e4.bindTooltip(
+                `<div>
+                     LFPG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31e2c211a5b84b4fac6645adeb31a3ea = L.marker(
+                [48.71670150756836, 2.3833000659942627],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_c3417aa307744bf99dac3576628e3ab3 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_57c7621c81564cd98a5b21f429dec521 = $(`<div id="html_57c7621c81564cd98a5b21f429dec521" style="width: 100.0%; height: 100.0%;">                 <b>LFPO informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 41.0 F</li>                     <li>Temperature ressentie: 32.8 F</li>                     <li>Pression atmosphérique : 29.8 inches</li>                     <li>Force du vent : 14 noeuds</li>                     <li>Direction du vent : 50.0 degrée</li>                     <li>Humidité de l'air : 86.9 %</li>                 </ul>             </div>`)[0];
+            popup_c3417aa307744bf99dac3576628e3ab3.setContent(html_57c7621c81564cd98a5b21f429dec521);
+        
+
+        marker_31e2c211a5b84b4fac6645adeb31a3ea.bindPopup(popup_c3417aa307744bf99dac3576628e3ab3)
+        ;
+
+        
+    
+    
+            marker_31e2c211a5b84b4fac6645adeb31a3ea.bindTooltip(
+                `<div>
+                     LFPO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eeab8e855036415cb74e3b3b8d3351d8 = L.marker(
+                [48.44419860839844, -4.411900043487549],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_125efa7014154edcafd41a3c7ac6c855 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_be85fb210f034fe49c40e6af9b5152c1 = $(`<div id="html_be85fb210f034fe49c40e6af9b5152c1" style="width: 100.0%; height: 100.0%;">                 <b>LFRB informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 44.6 F</li>                     <li>Temperature ressentie: 38.0 F</li>                     <li>Pression atmosphérique : 29.9 inches</li>                     <li>Force du vent : 12 noeuds</li>                     <li>Direction du vent : 50.0 degrée</li>                     <li>Humidité de l'air : 75.7 %</li>                 </ul>             </div>`)[0];
+            popup_125efa7014154edcafd41a3c7ac6c855.setContent(html_be85fb210f034fe49c40e6af9b5152c1);
+        
+
+        marker_eeab8e855036415cb74e3b3b8d3351d8.bindPopup(popup_125efa7014154edcafd41a3c7ac6c855)
+        ;
+
+        
+    
+    
+            marker_eeab8e855036415cb74e3b3b8d3351d8.bindTooltip(
+                `<div>
+                     LFRB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7eda4ff30d445cdbf11689e36e9fe79 = L.marker(
+                [48.58890151977539, -2.0748000144958496],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_5d85f478e6ee4cf3a479b7c0400d80bf = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_8327b5b6e98a43e19a4f322cd2cc56c7 = $(`<div id="html_8327b5b6e98a43e19a4f322cd2cc56c7" style="width: 100.0%; height: 100.0%;">                 <b>LFRD informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 42.8 F</li>                     <li>Temperature ressentie: 34.5 F</li>                     <li>Pression atmosphérique : 29.9 inches</li>                     <li>Force du vent : 16 noeuds</li>                     <li>Direction du vent : 50.0 degrée</li>                     <li>Humidité de l'air : 81.1 %</li>                 </ul>             </div>`)[0];
+            popup_5d85f478e6ee4cf3a479b7c0400d80bf.setContent(html_8327b5b6e98a43e19a4f322cd2cc56c7);
+        
+
+        marker_a7eda4ff30d445cdbf11689e36e9fe79.bindPopup(popup_5d85f478e6ee4cf3a479b7c0400d80bf)
+        ;
+
+        
+    
+    
+            marker_a7eda4ff30d445cdbf11689e36e9fe79.bindTooltip(
+                `<div>
+                     LFRD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c10d96f6a17944f498e92fc0238089e3 = L.marker(
+                [48.06890106201172, -1.7338999509811401],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_a227f1d445c04f2a9fd607e5c1afb5de = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_502a120f03084cc2bb88bf9e1834fae0 = $(`<div id="html_502a120f03084cc2bb88bf9e1834fae0" style="width: 100.0%; height: 100.0%;">                 <b>LFRN informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 42.8 F</li>                     <li>Temperature ressentie: 35.8 F</li>                     <li>Pression atmosphérique : 29.8 inches</li>                     <li>Force du vent : 12 noeuds</li>                     <li>Direction du vent : 30.0 degrée</li>                     <li>Humidité de l'air : 87.0 %</li>                 </ul>             </div>`)[0];
+            popup_a227f1d445c04f2a9fd607e5c1afb5de.setContent(html_502a120f03084cc2bb88bf9e1834fae0);
+        
+
+        marker_c10d96f6a17944f498e92fc0238089e3.bindPopup(popup_a227f1d445c04f2a9fd607e5c1afb5de)
+        ;
+
+        
+    
+    
+            marker_c10d96f6a17944f498e92fc0238089e3.bindTooltip(
+                `<div>
+                     LFRN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0df1f359a784f5e866df18da8e99111 = L.marker(
+                [48.58110046386719, 5.959700107574463],
+                {}
+            ).addTo(map_9d09935f97404aad9329c2ab0559197e);
+        
+    
+        var popup_68a765936e6b49c3a6404c924bdffa2a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_6c5d9053698345c4b92383ad1beff36a = $(`<div id="html_6c5d9053698345c4b92383ad1beff36a" style="width: 100.0%; height: 100.0%;">                 <b>LFSO informations le 2002-3-2 2:00</b></br></br>                 <ul>                     <li>Temperature réelle: 39.2 F</li>                     <li>Temperature ressentie: 32.0 F</li>                     <li>Pression atmosphérique : 29.8 inches</li>                     <li>Force du vent : 10 noeuds</li>                     <li>Direction du vent : 60.0 degrée</li>                     <li>Humidité de l'air : 80.8 %</li>                 </ul>             </div>`)[0];
+            popup_68a765936e6b49c3a6404c924bdffa2a.setContent(html_6c5d9053698345c4b92383ad1beff36a);
+        
+
+        marker_d0df1f359a784f5e866df18da8e99111.bindPopup(popup_68a765936e6b49c3a6404c924bdffa2a)
+        ;
+
+        
+    
+    
+            marker_d0df1f359a784f5e866df18da8e99111.bindTooltip(
+                `<div>
+                     LFSO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

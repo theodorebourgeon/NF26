@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f8583d52a5034e259ef676f11d20c4bd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f8583d52a5034e259ef676f11d20c4bd" ></div>
+        
+</body>
+<script>    
+    
+            var map_f8583d52a5034e259ef676f11d20c4bd = L.map(
+                "map_f8583d52a5034e259ef676f11d20c4bd",
+                {
+                    center: [47.029895, 2.440967],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1ed71b6066a14813a7e9d9c686884424 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var marker_42aa9f541cbd4b7bb71ddb94a4d99b4d = L.marker(
+                [42.54059982299805, 9.485300064086914],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_8a5e5d1fcd0a41c883ec9928d0bbb129 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_42aa9f541cbd4b7bb71ddb94a4d99b4d.setIcon(icon_8a5e5d1fcd0a41c883ec9928d0bbb129);
+        
+    
+        var popup_6f12c3e07e694934bda911d207237557 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_af15852652a842b48c48a281b7d18ea8 = $(`<div id="html_af15852652a842b48c48a281b7d18ea8" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 46.26500005722046 F</li>                             <li>Force du vent : 6.175 noeuds</li>                             <li>Direction du vent : 225.5 degrée</li>                             <li>Humidité de l'air : 60.55675039291382 %</li>                         </ul>                     </div>`)[0];
+            popup_6f12c3e07e694934bda911d207237557.setContent(html_af15852652a842b48c48a281b7d18ea8);
+        
+
+        marker_42aa9f541cbd4b7bb71ddb94a4d99b4d.bindPopup(popup_6f12c3e07e694934bda911d207237557)
+        ;
+
+        
+    
+    
+            marker_42aa9f541cbd4b7bb71ddb94a4d99b4d.bindTooltip(
+                `<div>
+                     LFKB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13bdb4600123495d8d2543dec1164666 = L.marker(
+                [49.01530075073242, 2.53439998626709],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_273697d8d1094e359df0d5289cfae593 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13bdb4600123495d8d2543dec1164666.setIcon(icon_273697d8d1094e359df0d5289cfae593);
+        
+    
+        var popup_ee2de3221427492490eed7dcf2550c2b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_f970ef83ee1849a58c38c1542299319f = $(`<div id="html_f970ef83ee1849a58c38c1542299319f" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 42.47600028991699 F</li>                             <li>Force du vent : 13.34 noeuds</li>                             <li>Direction du vent : 179.4 degrée</li>                             <li>Humidité de l'air : 89.28100036621093 %</li>                         </ul>                     </div>`)[0];
+            popup_ee2de3221427492490eed7dcf2550c2b.setContent(html_f970ef83ee1849a58c38c1542299319f);
+        
+
+        marker_13bdb4600123495d8d2543dec1164666.bindPopup(popup_ee2de3221427492490eed7dcf2550c2b)
+        ;
+
+        
+    
+    
+            marker_13bdb4600123495d8d2543dec1164666.bindTooltip(
+                `<div>
+                     LFPG
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a35548970d93446791582d0d01375231 = L.marker(
+                [47.94580078125, 0.193900004029274],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_6261db9c14224a19ba0e614791f40392 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a35548970d93446791582d0d01375231.setIcon(icon_6261db9c14224a19ba0e614791f40392);
+        
+    
+        var popup_5dfe321d1eab40cda08a760370363549 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_69363ea94da54c0a8ed62cf8b4aae9f4 = $(`<div id="html_69363ea94da54c0a8ed62cf8b4aae9f4" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 46.914286204746794 F</li>                             <li>Force du vent : 9.5 noeuds</li>                             <li>Direction du vent : 186.42857142857142 degrée</li>                             <li>Humidité de l'air : 91.2735710144043 %</li>                         </ul>                     </div>`)[0];
+            popup_5dfe321d1eab40cda08a760370363549.setContent(html_69363ea94da54c0a8ed62cf8b4aae9f4);
+        
+
+        marker_a35548970d93446791582d0d01375231.bindPopup(popup_5dfe321d1eab40cda08a760370363549)
+        ;
+
+        
+    
+    
+            marker_a35548970d93446791582d0d01375231.bindTooltip(
+                `<div>
+                     LFRM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46d44cf6c96044969a9024a7c2fcb473 = L.marker(
+                [46.59389877319336, 0.31439998745918274],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_51bf31c3b6bd4043b6e540eaabd533d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_46d44cf6c96044969a9024a7c2fcb473.setIcon(icon_51bf31c3b6bd4043b6e540eaabd533d0);
+        
+    
+        var popup_524083a914b34af994d2788eb450f521 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_376af9afaead46d6b24f4bac659ec41f = $(`<div id="html_376af9afaead46d6b24f4bac659ec41f" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 45.95000044504801 F</li>                             <li>Force du vent : 14.583333333333334 noeuds</li>                             <li>Direction du vent : 198.33333333333334 degrée</li>                             <li>Humidité de l'air : 79.17249902089436 %</li>                         </ul>                     </div>`)[0];
+            popup_524083a914b34af994d2788eb450f521.setContent(html_376af9afaead46d6b24f4bac659ec41f);
+        
+
+        marker_46d44cf6c96044969a9024a7c2fcb473.bindPopup(popup_524083a914b34af994d2788eb450f521)
+        ;
+
+        
+    
+    
+            marker_46d44cf6c96044969a9024a7c2fcb473.bindTooltip(
+                `<div>
+                     LFBI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_715419ef945f47caa80603fcb3ec6b17 = L.marker(
+                [45.72610092163086, 4.93779993057251],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_8ac4cb890c8d480fa14f4c2faef1f567 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_715419ef945f47caa80603fcb3ec6b17.setIcon(icon_8ac4cb890c8d480fa14f4c2faef1f567);
+        
+    
+        var popup_66a297d71cb04945afe8cce6ec88a0a1 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_f8f0c77a490643dbab73a4299e374114 = $(`<div id="html_f8f0c77a490643dbab73a4299e374114" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 46.953846564659706 F</li>                             <li>Force du vent : 16.615384615384617 noeuds</li>                             <li>Direction du vent : 173.07692307692307 degrée</li>                             <li>Humidité de l'air : 61.571538778451774 %</li>                         </ul>                     </div>`)[0];
+            popup_66a297d71cb04945afe8cce6ec88a0a1.setContent(html_f8f0c77a490643dbab73a4299e374114);
+        
+
+        marker_715419ef945f47caa80603fcb3ec6b17.bindPopup(popup_66a297d71cb04945afe8cce6ec88a0a1)
+        ;
+
+        
+    
+    
+            marker_715419ef945f47caa80603fcb3ec6b17.bindTooltip(
+                `<div>
+                     LFLY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59c91ce2d4114f35961809ab002bc54c = L.marker(
+                [43.469398498535156, -1.5343999862670898],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_70b110f62bc74bf8b76ef2b6f2879171 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59c91ce2d4114f35961809ab002bc54c.setIcon(icon_70b110f62bc74bf8b76ef2b6f2879171);
+        
+    
+        var popup_67f4d32610204a3ca76a98d46b930b15 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_c076fbe424684a24a78d14ddf989c407 = $(`<div id="html_c076fbe424684a24a78d14ddf989c407" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 60.199999491373696 F</li>                             <li>Force du vent : 11.0 noeuds</li>                             <li>Direction du vent : 198.66666666666666 degrée</li>                             <li>Humidité de l'air : 52.666666920979814 %</li>                         </ul>                     </div>`)[0];
+            popup_67f4d32610204a3ca76a98d46b930b15.setContent(html_c076fbe424684a24a78d14ddf989c407);
+        
+
+        marker_59c91ce2d4114f35961809ab002bc54c.bindPopup(popup_67f4d32610204a3ca76a98d46b930b15)
+        ;
+
+        
+    
+    
+            marker_59c91ce2d4114f35961809ab002bc54c.bindTooltip(
+                `<div>
+                     LFBZ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e2f3545e7614422990d84f39714341f = L.marker(
+                [45.72639846801758, 5.0777997970581055],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_66877c7a512b48e1a562f67b90586351 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e2f3545e7614422990d84f39714341f.setIcon(icon_66877c7a512b48e1a562f67b90586351);
+        
+    
+        var popup_88ff43b909484835ba48994ef21a5237 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_0ff5d79bc2854b34b27b5e9929a5f3f4 = $(`<div id="html_0ff5d79bc2854b34b27b5e9929a5f3f4" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 44.681818441911176 F</li>                             <li>Force du vent : 12.045454545454545 noeuds</li>                             <li>Direction du vent : 166.5909090909091 degrée</li>                             <li>Humidité de l'air : 63.89977316422896 %</li>                         </ul>                     </div>`)[0];
+            popup_88ff43b909484835ba48994ef21a5237.setContent(html_0ff5d79bc2854b34b27b5e9929a5f3f4);
+        
+
+        marker_0e2f3545e7614422990d84f39714341f.bindPopup(popup_88ff43b909484835ba48994ef21a5237)
+        ;
+
+        
+    
+    
+            marker_0e2f3545e7614422990d84f39714341f.bindTooltip(
+                `<div>
+                     LFLL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d9b9a8717404763943f5d235de71e45 = L.marker(
+                [48.7505989074707, 2.113600015640259],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_94080ddf37b047cdb41eacd4734b1427 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0d9b9a8717404763943f5d235de71e45.setIcon(icon_94080ddf37b047cdb41eacd4734b1427);
+        
+    
+        var popup_30303084ca7e4361bdcefd80d03182a6 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_d7eac04a907446aa9e924a467908edc7 = $(`<div id="html_d7eac04a907446aa9e924a467908edc7" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 44.27272761951793 F</li>                             <li>Force du vent : 12.909090909090908 noeuds</li>                             <li>Direction du vent : 187.27272727272728 degrée</li>                             <li>Humidité de l'air : 92.83000183105469 %</li>                         </ul>                     </div>`)[0];
+            popup_30303084ca7e4361bdcefd80d03182a6.setContent(html_d7eac04a907446aa9e924a467908edc7);
+        
+
+        marker_0d9b9a8717404763943f5d235de71e45.bindPopup(popup_30303084ca7e4361bdcefd80d03182a6)
+        ;
+
+        
+    
+    
+            marker_0d9b9a8717404763943f5d235de71e45.bindTooltip(
+                `<div>
+                     LFPN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc0d199657284ff49ac6a30778ab0894 = L.marker(
+                [49.18000030517578, -0.4560999870300293],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_83bae8db56314994a81ddd3e19ebfd58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc0d199657284ff49ac6a30778ab0894.setIcon(icon_83bae8db56314994a81ddd3e19ebfd58);
+        
+    
+        var popup_26492db7594a49d89163b6416ba30099 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_a76d4b05b7b2421c9a12d7a5c96ab13a = $(`<div id="html_a76d4b05b7b2421c9a12d7a5c96ab13a" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 47.39000053405762 F</li>                             <li>Force du vent : 15.95 noeuds</li>                             <li>Direction du vent : 192.0 degrée</li>                             <li>Humidité de l'air : 90.67900009155274 %</li>                         </ul>                     </div>`)[0];
+            popup_26492db7594a49d89163b6416ba30099.setContent(html_a76d4b05b7b2421c9a12d7a5c96ab13a);
+        
+
+        marker_bc0d199657284ff49ac6a30778ab0894.bindPopup(popup_26492db7594a49d89163b6416ba30099)
+        ;
+
+        
+    
+    
+            marker_bc0d199657284ff49ac6a30778ab0894.bindTooltip(
+                `<div>
+                     LFRK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a263f53f2b5747b6ab6b7d90617f52dc = L.marker(
+                [45.63669967651367, 5.8831000328063965],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_179a85359b42404f9b848dbad8ca0f92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a263f53f2b5747b6ab6b7d90617f52dc.setIcon(icon_179a85359b42404f9b848dbad8ca0f92);
+        
+    
+        var popup_75ccad5f4c1945f6b46460658676582c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_d036db399bc7471e9833e55d811fc2e4 = $(`<div id="html_d036db399bc7471e9833e55d811fc2e4" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 32.41538443932166 F</li>                             <li>Force du vent : 1.5384615384615385 noeuds</li>                             <li>Direction du vent : 135.3846153846154 degrée</li>                             <li>Humidité de l'air : 79.0576911339393 %</li>                         </ul>                     </div>`)[0];
+            popup_75ccad5f4c1945f6b46460658676582c.setContent(html_d036db399bc7471e9833e55d811fc2e4);
+        
+
+        marker_a263f53f2b5747b6ab6b7d90617f52dc.bindPopup(popup_75ccad5f4c1945f6b46460658676582c)
+        ;
+
+        
+    
+    
+            marker_a263f53f2b5747b6ab6b7d90617f52dc.bindTooltip(
+                `<div>
+                     LFLB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b94351b74ff4ce38f691b39db1dfbf7 = L.marker(
+                [47.150001525878906, -1.6088999509811401],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_08823de704cb46cd9d07973bca7f3ab7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b94351b74ff4ce38f691b39db1dfbf7.setIcon(icon_08823de704cb46cd9d07973bca7f3ab7);
+        
+    
+        var popup_ad6a24701b79408f8da996093a3f7a35 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_16d62878ba9c4474ba4e6495b67b6379 = $(`<div id="html_16d62878ba9c4474ba4e6495b67b6379" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 49.62105259142424 F</li>                             <li>Force du vent : 13.578947368421053 noeuds</li>                             <li>Direction du vent : 172.6315789473684 degrée</li>                             <li>Humidité de l'air : 88.72421144184314 %</li>                         </ul>                     </div>`)[0];
+            popup_ad6a24701b79408f8da996093a3f7a35.setContent(html_16d62878ba9c4474ba4e6495b67b6379);
+        
+
+        marker_6b94351b74ff4ce38f691b39db1dfbf7.bindPopup(popup_ad6a24701b79408f8da996093a3f7a35)
+        ;
+
+        
+    
+    
+            marker_6b94351b74ff4ce38f691b39db1dfbf7.bindTooltip(
+                `<div>
+                     LFRS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b29afd05d5d4f61845b320b1736fa98 = L.marker(
+                [43.545799255371094, 6.95389986038208],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_dc1c1c6dcbc24ed99e43cdddddbca8ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b29afd05d5d4f61845b320b1736fa98.setIcon(icon_dc1c1c6dcbc24ed99e43cdddddbca8ac);
+        
+    
+        var popup_de55e7e0a95744009ebe1fe4c113e42b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_a74a7c3a120e49f9bf0aa460ae37e752 = $(`<div id="html_a74a7c3a120e49f9bf0aa460ae37e752" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 41.90000009536743 F</li>                             <li>Force du vent : 3.0 noeuds</li>                             <li>Direction du vent : 305.0 degrée</li>                             <li>Humidité de l'air : 60.83375024795532 %</li>                         </ul>                     </div>`)[0];
+            popup_de55e7e0a95744009ebe1fe4c113e42b.setContent(html_a74a7c3a120e49f9bf0aa460ae37e752);
+        
+
+        marker_6b29afd05d5d4f61845b320b1736fa98.bindPopup(popup_de55e7e0a95744009ebe1fe4c113e42b)
+        ;
+
+        
+    
+    
+            marker_6b29afd05d5d4f61845b320b1736fa98.bindTooltip(
+                `<div>
+                     LFMD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5327d26c71a74c43bc01000bd858c391 = L.marker(
+                [45.86109924316406, 1.1749999523162842],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_54b2e27783c54ef6bb620f624c4cc5b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5327d26c71a74c43bc01000bd858c391.setIcon(icon_54b2e27783c54ef6bb620f624c4cc5b3);
+        
+    
+        var popup_1aed8ee5f7934dbd85ef5f86e11d3e6d = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_57ef5e35b3784e4ea07a99b48cbfcb02 = $(`<div id="html_57ef5e35b3784e4ea07a99b48cbfcb02" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 45.990909056230024 F</li>                             <li>Force du vent : 9.818181818181818 noeuds</li>                             <li>Direction du vent : 172.27272727272728 degrée</li>                             <li>Humidité de l'air : 63.922727758234196 %</li>                         </ul>                     </div>`)[0];
+            popup_1aed8ee5f7934dbd85ef5f86e11d3e6d.setContent(html_57ef5e35b3784e4ea07a99b48cbfcb02);
+        
+
+        marker_5327d26c71a74c43bc01000bd858c391.bindPopup(popup_1aed8ee5f7934dbd85ef5f86e11d3e6d)
+        ;
+
+        
+    
+    
+            marker_5327d26c71a74c43bc01000bd858c391.bindTooltip(
+                `<div>
+                     LFBL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8547cdcc92d04c3dbf40621c5d9594ab = L.marker(
+                [49.38309860229492, 1.181399941444397],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_c2711869a528456aa8d4294f6e3c14ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8547cdcc92d04c3dbf40621c5d9594ab.setIcon(icon_c2711869a528456aa8d4294f6e3c14ab);
+        
+    
+        var popup_ee0307dc5a494f988f3c1b25822bd3aa = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_8b06a8c384fb4c109069e8e4f39a7be7 = $(`<div id="html_8b06a8c384fb4c109069e8e4f39a7be7" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 42.949999491373696 F</li>                             <li>Force du vent : 12.583333333333334 noeuds</li>                             <li>Direction du vent : 167.5 degrée</li>                             <li>Humidité de l'air : 96.66999944051106 %</li>                         </ul>                     </div>`)[0];
+            popup_ee0307dc5a494f988f3c1b25822bd3aa.setContent(html_8b06a8c384fb4c109069e8e4f39a7be7);
+        
+
+        marker_8547cdcc92d04c3dbf40621c5d9594ab.bindPopup(popup_ee0307dc5a494f988f3c1b25822bd3aa)
+        ;
+
+        
+    
+    
+            marker_8547cdcc92d04c3dbf40621c5d9594ab.bindTooltip(
+                `<div>
+                     LFOP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79425504b792491489beeb80f7552ad1 = L.marker(
+                [43.094398498535156, 6.146399974822998],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_ca9771ea1df34d3e985b5dc7f7be2d3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_79425504b792491489beeb80f7552ad1.setIcon(icon_ca9771ea1df34d3e985b5dc7f7be2d3d);
+        
+    
+        var popup_46a594d208764ca38b3dcbc479490c63 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_c41d226cb8ae40e1b4e9d7751a4ab2df = $(`<div id="html_c41d226cb8ae40e1b4e9d7751a4ab2df" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 51.16470583747415 F</li>                             <li>Force du vent : 6.176470588235294 noeuds</li>                             <li>Direction du vent : 141.875 degrée</li>                             <li>Humidité de l'air : 82.19058855842141 %</li>                         </ul>                     </div>`)[0];
+            popup_46a594d208764ca38b3dcbc479490c63.setContent(html_c41d226cb8ae40e1b4e9d7751a4ab2df);
+        
+
+        marker_79425504b792491489beeb80f7552ad1.bindPopup(popup_46a594d208764ca38b3dcbc479490c63)
+        ;
+
+        
+    
+    
+            marker_79425504b792491489beeb80f7552ad1.bindTooltip(
+                `<div>
+                     LFTH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a258ebab3bf40e48731e3d6673710a4 = L.marker(
+                [45.36289978027344, 5.329400062561035],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_9d34faff46424e7b945dad48e0b54360 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4a258ebab3bf40e48731e3d6673710a4.setIcon(icon_9d34faff46424e7b945dad48e0b54360);
+        
+    
+        var popup_a71c34a0bc6a4016964530a76944ab8e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b274cc1b0c9a400088acaa626d41c8a5 = $(`<div id="html_b274cc1b0c9a400088acaa626d41c8a5" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 42.96363553133878 F</li>                             <li>Force du vent : 6.454545454545454 noeuds</li>                             <li>Direction du vent : 262.72727272727275 degrée</li>                             <li>Humidité de l'air : 65.93272677334872 %</li>                         </ul>                     </div>`)[0];
+            popup_a71c34a0bc6a4016964530a76944ab8e.setContent(html_b274cc1b0c9a400088acaa626d41c8a5);
+        
+
+        marker_4a258ebab3bf40e48731e3d6673710a4.bindPopup(popup_a71c34a0bc6a4016964530a76944ab8e)
+        ;
+
+        
+    
+    
+            marker_4a258ebab3bf40e48731e3d6673710a4.bindTooltip(
+                `<div>
+                     LFLS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f6772996a7443e8833e2f8b45f4bcc7 = L.marker(
+                [47.059200286865234, 2.3596999645233154],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_3c10892b95c24abe999e6e700ca14a50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5f6772996a7443e8833e2f8b45f4bcc7.setIcon(icon_3c10892b95c24abe999e6e700ca14a50);
+        
+    
+        var popup_c9a8dc1f55384f678680a7bad102ab16 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_10f132978c3449228cb93cb552f7f706 = $(`<div id="html_10f132978c3449228cb93cb552f7f706" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 44.45000076293945 F</li>                             <li>Force du vent : 7.75 noeuds</li>                             <li>Direction du vent : 173.33333333333334 degrée</li>                             <li>Humidité de l'air : 83.39916737874348 %</li>                         </ul>                     </div>`)[0];
+            popup_c9a8dc1f55384f678680a7bad102ab16.setContent(html_10f132978c3449228cb93cb552f7f706);
+        
+
+        marker_5f6772996a7443e8833e2f8b45f4bcc7.bindPopup(popup_c9a8dc1f55384f678680a7bad102ab16)
+        ;
+
+        
+    
+    
+            marker_5f6772996a7443e8833e2f8b45f4bcc7.bindTooltip(
+                `<div>
+                     LFLD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cf07a3688144982b6a3b962c89ae735 = L.marker(
+                [43.380001068115234, -0.4185999929904938],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_0d1d47754dac4f3d92f129cc605d213c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7cf07a3688144982b6a3b962c89ae735.setIcon(icon_0d1d47754dac4f3d92f129cc605d213c);
+        
+    
+        var popup_9e20b2d62aa14c50b4799a4404eb8aa7 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_ca6e6f3e49244c808d1cbc4113d21bf5 = $(`<div id="html_ca6e6f3e49244c808d1cbc4113d21bf5" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 49.74285725184849 F</li>                             <li>Force du vent : 4.357142857142857 noeuds</li>                             <li>Direction du vent : 123.57142857142857 degrée</li>                             <li>Humidité de l'air : 80.9221431187221 %</li>                         </ul>                     </div>`)[0];
+            popup_9e20b2d62aa14c50b4799a4404eb8aa7.setContent(html_ca6e6f3e49244c808d1cbc4113d21bf5);
+        
+
+        marker_7cf07a3688144982b6a3b962c89ae735.bindPopup(popup_9e20b2d62aa14c50b4799a4404eb8aa7)
+        ;
+
+        
+    
+    
+            marker_7cf07a3688144982b6a3b962c89ae735.bindTooltip(
+                `<div>
+                     LFBP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb923b1e701f426cbe8c77bf905c6763 = L.marker(
+                [48.71670150756836, 2.3833000659942627],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_32c64c0f808c459084f8cc8967ebcfa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb923b1e701f426cbe8c77bf905c6763.setIcon(icon_32c64c0f808c459084f8cc8967ebcfa1);
+        
+    
+        var popup_a5707b05fa3d4f9e8cc1d365563aeb79 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_cd5cc009ea63448e8bff49bcad1c5448 = $(`<div id="html_cd5cc009ea63448e8bff49bcad1c5448" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 42.87346991714166 F</li>                             <li>Force du vent : 11.489795918367347 noeuds</li>                             <li>Direction du vent : 187.55102040816325 degrée</li>                             <li>Humidité de l'air : 91.77877589634487 %</li>                         </ul>                     </div>`)[0];
+            popup_a5707b05fa3d4f9e8cc1d365563aeb79.setContent(html_cd5cc009ea63448e8bff49bcad1c5448);
+        
+
+        marker_eb923b1e701f426cbe8c77bf905c6763.bindPopup(popup_a5707b05fa3d4f9e8cc1d365563aeb79)
+        ;
+
+        
+    
+    
+            marker_eb923b1e701f426cbe8c77bf905c6763.bindTooltip(
+                `<div>
+                     LFPO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c344be7a82c747f5b957bada78338b49 = L.marker(
+                [43.44169998168945, 5.2266998291015625],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_07c28148439d454caa32c271c6ebf68b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c344be7a82c747f5b957bada78338b49.setIcon(icon_07c28148439d454caa32c271c6ebf68b);
+        
+    
+        var popup_b06fcc26abe14a2d97e7c7b72057217a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b1ef8c4ec096466394b20ee275079139 = $(`<div id="html_b1ef8c4ec096466394b20ee275079139" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 49.67999979654948 F</li>                             <li>Force du vent : 13.555555555555555 noeuds</li>                             <li>Direction du vent : 131.55555555555554 degrée</li>                             <li>Humidité de l'air : 74.15111134847005 %</li>                         </ul>                     </div>`)[0];
+            popup_b06fcc26abe14a2d97e7c7b72057217a.setContent(html_b1ef8c4ec096466394b20ee275079139);
+        
+
+        marker_c344be7a82c747f5b957bada78338b49.bindPopup(popup_b06fcc26abe14a2d97e7c7b72057217a)
+        ;
+
+        
+    
+    
+            marker_c344be7a82c747f5b957bada78338b49.bindTooltip(
+                `<div>
+                     LFML
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b382afdadb0c40bcb7d8fd084d454424 = L.marker(
+                [44.17219924926758, 0.5946999788284302],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_3056ffadc6c74f7c9fc1827a10230a45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b382afdadb0c40bcb7d8fd084d454424.setIcon(icon_3056ffadc6c74f7c9fc1827a10230a45);
+        
+    
+        var popup_8b830e234a2f499d9259bd7140a875a5 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_d9072e7d30ae41caaaa457638b9c3d21 = $(`<div id="html_d9072e7d30ae41caaaa457638b9c3d21" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 45.09090909090909 F</li>                             <li>Force du vent : 8.727272727272727 noeuds</li>                             <li>Direction du vent : 107.27272727272727 degrée</li>                             <li>Humidité de l'air : 79.50636360862039 %</li>                         </ul>                     </div>`)[0];
+            popup_8b830e234a2f499d9259bd7140a875a5.setContent(html_d9072e7d30ae41caaaa457638b9c3d21);
+        
+
+        marker_b382afdadb0c40bcb7d8fd084d454424.bindPopup(popup_8b830e234a2f499d9259bd7140a875a5)
+        ;
+
+        
+    
+    
+            marker_b382afdadb0c40bcb7d8fd084d454424.bindTooltip(
+                `<div>
+                     LFBA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1210439d5ad47b387129efdcacd581f = L.marker(
+                [46.16669845581055, 3.3986001014709473],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_b9b682712a9d43d7b588779a0b8dde54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c1210439d5ad47b387129efdcacd581f.setIcon(icon_b9b682712a9d43d7b588779a0b8dde54);
+        
+    
+        var popup_b6dfcc31b0604eae98c927aa82a874bb = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_7145b1f97869480c9fa06493fe347a12 = $(`<div id="html_7145b1f97869480c9fa06493fe347a12" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 51.199999491373696 F</li>                             <li>Force du vent : 8.23076923076923 noeuds</li>                             <li>Direction du vent : 186.92307692307693 degrée</li>                             <li>Humidité de l'air : 46.750834147135414 %</li>                         </ul>                     </div>`)[0];
+            popup_b6dfcc31b0604eae98c927aa82a874bb.setContent(html_7145b1f97869480c9fa06493fe347a12);
+        
+
+        marker_c1210439d5ad47b387129efdcacd581f.bindPopup(popup_b6dfcc31b0604eae98c927aa82a874bb)
+        ;
+
+        
+    
+    
+            marker_c1210439d5ad47b387129efdcacd581f.bindTooltip(
+                `<div>
+                     LFLV
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bbc22d8702b4f91965551038ef1e815 = L.marker(
+                [48.63140106201172, 4.903600215911865],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_59b35bc60440454d8de0b2efaec13883 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5bbc22d8702b4f91965551038ef1e815.setIcon(icon_59b35bc60440454d8de0b2efaec13883);
+        
+    
+        var popup_afd07c0b24f44ac4a37bc8a3e4469c41 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_0d213ddac02a407a8289bd2eb3f4eec7 = $(`<div id="html_0d213ddac02a407a8289bd2eb3f4eec7" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 41.4235294566435 F</li>                             <li>Force du vent : 0.0 noeuds</li>                             <li>Direction du vent : 0.0 degrée</li>                             <li>Humidité de l'air : 84.09249877929688 %</li>                         </ul>                     </div>`)[0];
+            popup_afd07c0b24f44ac4a37bc8a3e4469c41.setContent(html_0d213ddac02a407a8289bd2eb3f4eec7);
+        
+
+        marker_5bbc22d8702b4f91965551038ef1e815.bindPopup(popup_afd07c0b24f44ac4a37bc8a3e4469c41)
+        ;
+
+        
+    
+    
+            marker_5bbc22d8702b4f91965551038ef1e815.bindTooltip(
+                `<div>
+                     LFSI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5ea76fbf7c442828d4266d1ef3465b5 = L.marker(
+                [48.58110046386719, 5.959700107574463],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_2d2c7d749f394ca7b806ea48eefcf0c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f5ea76fbf7c442828d4266d1ef3465b5.setIcon(icon_2d2c7d749f394ca7b806ea48eefcf0c2);
+        
+    
+        var popup_64752eb1dbad44adb945778189472f0e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_fcede83c5b0b4291ba99e4efb20cac21 = $(`<div id="html_fcede83c5b0b4291ba99e4efb20cac21" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 41.000000190734866 F</li>                             <li>Force du vent : 13.15 noeuds</li>                             <li>Direction du vent : 195.5 degrée</li>                             <li>Humidité de l'air : 72.99400062561035 %</li>                         </ul>                     </div>`)[0];
+            popup_64752eb1dbad44adb945778189472f0e.setContent(html_fcede83c5b0b4291ba99e4efb20cac21);
+        
+
+        marker_f5ea76fbf7c442828d4266d1ef3465b5.bindPopup(popup_64752eb1dbad44adb945778189472f0e)
+        ;
+
+        
+    
+    
+            marker_f5ea76fbf7c442828d4266d1ef3465b5.bindTooltip(
+                `<div>
+                     LFSO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d53d3a78d6b4ec3b15b2da1a6f38c02 = L.marker(
+                [47.614200592041016, 7.510300159454346],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_b970d3d5936b4f30939720a27fb8c399 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0d53d3a78d6b4ec3b15b2da1a6f38c02.setIcon(icon_b970d3d5936b4f30939720a27fb8c399);
+        
+    
+        var popup_a05f5ff818ed4d3ba72689a4040ba455 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e4fd45f3a3fe4d8681c74b532cd3ad1a = $(`<div id="html_e4fd45f3a3fe4d8681c74b532cd3ad1a" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 35.555000114440915 F</li>                             <li>Force du vent : 8.575 noeuds</li>                             <li>Direction du vent : 145.0 degrée</li>                             <li>Humidité de l'air : 64.00800008773804 %</li>                         </ul>                     </div>`)[0];
+            popup_a05f5ff818ed4d3ba72689a4040ba455.setContent(html_e4fd45f3a3fe4d8681c74b532cd3ad1a);
+        
+
+        marker_0d53d3a78d6b4ec3b15b2da1a6f38c02.bindPopup(popup_a05f5ff818ed4d3ba72689a4040ba455)
+        ;
+
+        
+    
+    
+            marker_0d53d3a78d6b4ec3b15b2da1a6f38c02.bindTooltip(
+                `<div>
+                     LFSB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_524ea1dd54ef4b3da27cf463d4afe2f0 = L.marker(
+                [48.549400329589844, 7.6402997970581055],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_49fb2a8603974928ac5219dcb2474677 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_524ea1dd54ef4b3da27cf463d4afe2f0.setIcon(icon_49fb2a8603974928ac5219dcb2474677);
+        
+    
+        var popup_688d164133474d47ab79be4b957d8f1a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_32b5ce1aae9b4ba4a05dd5da148ab90d = $(`<div id="html_32b5ce1aae9b4ba4a05dd5da148ab90d" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 34.67428567068917 F</li>                             <li>Force du vent : 4.542857142857143 noeuds</li>                             <li>Direction du vent : 162.85714285714286 degrée</li>                             <li>Humidité de l'air : 80.44085780552456 %</li>                         </ul>                     </div>`)[0];
+            popup_688d164133474d47ab79be4b957d8f1a.setContent(html_32b5ce1aae9b4ba4a05dd5da148ab90d);
+        
+
+        marker_524ea1dd54ef4b3da27cf463d4afe2f0.bindPopup(popup_688d164133474d47ab79be4b957d8f1a)
+        ;
+
+        
+    
+    
+            marker_524ea1dd54ef4b3da27cf463d4afe2f0.bindTooltip(
+                `<div>
+                     LFST
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d65c93ea9aa941dc8b17ed71b4813eb1 = L.marker(
+                [49.30609893798828, 4.050600051879883],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_46e85b61c1fc44c0b714cbc6b3f84dac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d65c93ea9aa941dc8b17ed71b4813eb1.setIcon(icon_46e85b61c1fc44c0b714cbc6b3f84dac);
+        
+    
+        var popup_95510871eb5944a0bb2ac0f257de378b = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_563b630f26f94b21a72d49e0f48f4779 = $(`<div id="html_563b630f26f94b21a72d49e0f48f4779" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 40.92173916360606 F</li>                             <li>Force du vent : 12.217391304347826 noeuds</li>                             <li>Direction du vent : 173.91304347826087 degrée</li>                             <li>Humidité de l'air : 86.46521792204484 %</li>                         </ul>                     </div>`)[0];
+            popup_95510871eb5944a0bb2ac0f257de378b.setContent(html_563b630f26f94b21a72d49e0f48f4779);
+        
+
+        marker_d65c93ea9aa941dc8b17ed71b4813eb1.bindPopup(popup_95510871eb5944a0bb2ac0f257de378b)
+        ;
+
+        
+    
+    
+            marker_d65c93ea9aa941dc8b17ed71b4813eb1.bindTooltip(
+                `<div>
+                     LFSR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56e2e571d5ec4cf09da34e1148c252c6 = L.marker(
+                [41.930599212646484, 8.792799949645996],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_ca3ae08ebcf043c3a21d24aeb2b53f7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_56e2e571d5ec4cf09da34e1148c252c6.setIcon(icon_ca3ae08ebcf043c3a21d24aeb2b53f7a);
+        
+    
+        var popup_4c737fe8d0f4459ab23f19baa3750553 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_4439cc38fbe14e68b9f39c8ca6cb19b8 = $(`<div id="html_4439cc38fbe14e68b9f39c8ca6cb19b8" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 45.52000037299262 F</li>                             <li>Force du vent : 5.822222222222222 noeuds</li>                             <li>Direction du vent : 82.0 degrée</li>                             <li>Humidité de l'air : 71.50999976264106 %</li>                         </ul>                     </div>`)[0];
+            popup_4c737fe8d0f4459ab23f19baa3750553.setContent(html_4439cc38fbe14e68b9f39c8ca6cb19b8);
+        
+
+        marker_56e2e571d5ec4cf09da34e1148c252c6.bindPopup(popup_4c737fe8d0f4459ab23f19baa3750553)
+        ;
+
+        
+    
+    
+            marker_56e2e571d5ec4cf09da34e1148c252c6.bindTooltip(
+                `<div>
+                     LFKJ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_401a3daa570f4b2ca2439a838e7d1fd5 = L.marker(
+                [43.576900482177734, 3.963099956512451],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_49ce1e6ff51c4bf2af3686cd17699e29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_401a3daa570f4b2ca2439a838e7d1fd5.setIcon(icon_49ce1e6ff51c4bf2af3686cd17699e29);
+        
+    
+        var popup_71661fe3ed364d6ab4fa8b165ba7d8e0 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_9041cf7a118240a6a858ae58777d95ff = $(`<div id="html_9041cf7a118240a6a858ae58777d95ff" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 47.08571443103609 F</li>                             <li>Force du vent : 14.045454545454545 noeuds</li>                             <li>Direction du vent : 93.18181818181819 degrée</li>                             <li>Humidité de l'air : 85.21142868768601 %</li>                         </ul>                     </div>`)[0];
+            popup_71661fe3ed364d6ab4fa8b165ba7d8e0.setContent(html_9041cf7a118240a6a858ae58777d95ff);
+        
+
+        marker_401a3daa570f4b2ca2439a838e7d1fd5.bindPopup(popup_71661fe3ed364d6ab4fa8b165ba7d8e0)
+        ;
+
+        
+    
+    
+            marker_401a3daa570f4b2ca2439a838e7d1fd5.bindTooltip(
+                `<div>
+                     LFMT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d6b3261f64f4dca94f52b0024b0776e = L.marker(
+                [49.4463996887207, 2.12719988822937],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_a12a81710a3347598a1907c19eb69545 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d6b3261f64f4dca94f52b0024b0776e.setIcon(icon_a12a81710a3347598a1907c19eb69545);
+        
+    
+        var popup_9f1c77ab343b438b9d5a7aad92c6dd77 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_170f0130aab84e4a830b86488c13da65 = $(`<div id="html_170f0130aab84e4a830b86488c13da65" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 43.46315745303505 F</li>                             <li>Force du vent : 10.473684210526315 noeuds</li>                             <li>Direction du vent : 178.94736842105263 degrée</li>                             <li>Humidité de l'air : 95.82263143439042 %</li>                         </ul>                     </div>`)[0];
+            popup_9f1c77ab343b438b9d5a7aad92c6dd77.setContent(html_170f0130aab84e4a830b86488c13da65);
+        
+
+        marker_6d6b3261f64f4dca94f52b0024b0776e.bindPopup(popup_9f1c77ab343b438b9d5a7aad92c6dd77)
+        ;
+
+        
+    
+    
+            marker_6d6b3261f64f4dca94f52b0024b0776e.bindTooltip(
+                `<div>
+                     LFOB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_115567155b5b4a29820c9b0dd9f50cce = L.marker(
+                [42.73720169067383, 2.87280011177063],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_b3231a8fe25340faab3a436c10bda21c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_115567155b5b4a29820c9b0dd9f50cce.setIcon(icon_b3231a8fe25340faab3a436c10bda21c);
+        
+    
+        var popup_91dd2cd3de7c486da8f94f7ccf71a99e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_469b5ecad1b94f7a94e6770d4c3435bd = $(`<div id="html_469b5ecad1b94f7a94e6770d4c3435bd" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 45.59999974568685 F</li>                             <li>Force du vent : 3.388888888888889 noeuds</li>                             <li>Direction du vent : 186.11111111111111 degrée</li>                             <li>Humidité de l'air : 80.29444397820367 %</li>                         </ul>                     </div>`)[0];
+            popup_91dd2cd3de7c486da8f94f7ccf71a99e.setContent(html_469b5ecad1b94f7a94e6770d4c3435bd);
+        
+
+        marker_115567155b5b4a29820c9b0dd9f50cce.bindPopup(popup_91dd2cd3de7c486da8f94f7ccf71a99e)
+        ;
+
+        
+    
+    
+            marker_115567155b5b4a29820c9b0dd9f50cce.bindTooltip(
+                `<div>
+                     LFMP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a312942a2f7e450ebb47828c60ae1d55 = L.marker(
+                [48.536399841308594, -2.853100061416626],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_6eac471d166d4671be8e9d3abca8f7b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a312942a2f7e450ebb47828c60ae1d55.setIcon(icon_6eac471d166d4671be8e9d3abca8f7b2);
+        
+    
+        var popup_ecee7b107c5640a98a8f48cee202e318 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_ee1dcdc111194e6399d3b547afc253aa = $(`<div id="html_ee1dcdc111194e6399d3b547afc253aa" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 51.64999930063883 F</li>                             <li>Force du vent : 15.583333333333334 noeuds</li>                             <li>Direction du vent : 190.0 degrée</li>                             <li>Humidité de l'air : 84.25000127156575 %</li>                         </ul>                     </div>`)[0];
+            popup_ecee7b107c5640a98a8f48cee202e318.setContent(html_ee1dcdc111194e6399d3b547afc253aa);
+        
+
+        marker_a312942a2f7e450ebb47828c60ae1d55.bindPopup(popup_ecee7b107c5640a98a8f48cee202e318)
+        ;
+
+        
+    
+    
+            marker_a312942a2f7e450ebb47828c60ae1d55.bindTooltip(
+                `<div>
+                     LFRT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6518aa6a4ab24f209e9bce33bf71216c = L.marker(
+                [43.64889907836914, 7.208899974822998],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_2499666c1c8a46d499c6ee34913f8d2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6518aa6a4ab24f209e9bce33bf71216c.setIcon(icon_2499666c1c8a46d499c6ee34913f8d2e);
+        
+    
+        var popup_94c2b44dce3447798c797f3a28c77992 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_ced2fe8947a943c3872b56d693944e30 = $(`<div id="html_ced2fe8947a943c3872b56d693944e30" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 44.60000076293945 F</li>                             <li>Force du vent : 9.755555555555556 noeuds</li>                             <li>Direction du vent : 299.55555555555554 degrée</li>                             <li>Humidité de l'air : 51.12266608344184 %</li>                         </ul>                     </div>`)[0];
+            popup_94c2b44dce3447798c797f3a28c77992.setContent(html_ced2fe8947a943c3872b56d693944e30);
+        
+
+        marker_6518aa6a4ab24f209e9bce33bf71216c.bindPopup(popup_94c2b44dce3447798c797f3a28c77992)
+        ;
+
+        
+    
+    
+            marker_6518aa6a4ab24f209e9bce33bf71216c.bindTooltip(
+                `<div>
+                     LFMN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e5bd43e328a4ad69f005712b2cf011b = L.marker(
+                [47.444400787353516, 0.7271999716758728],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_1e5d484469b846e0b9686311556a44ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9e5bd43e328a4ad69f005712b2cf011b.setIcon(icon_1e5d484469b846e0b9686311556a44ec);
+        
+    
+        var popup_354a9f9d89b242ba9ad566c2348b26f4 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_23be7ab4271240219822a7f1b4323b81 = $(`<div id="html_23be7ab4271240219822a7f1b4323b81" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 45.80000069027855 F</li>                             <li>Force du vent : 13.047619047619047 noeuds</li>                             <li>Direction du vent : 183.5 degrée</li>                             <li>Humidité de l'air : 86.5885714576358 %</li>                         </ul>                     </div>`)[0];
+            popup_354a9f9d89b242ba9ad566c2348b26f4.setContent(html_23be7ab4271240219822a7f1b4323b81);
+        
+
+        marker_9e5bd43e328a4ad69f005712b2cf011b.bindPopup(popup_354a9f9d89b242ba9ad566c2348b26f4)
+        ;
+
+        
+    
+    
+            marker_9e5bd43e328a4ad69f005712b2cf011b.bindTooltip(
+                `<div>
+                     LFOT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2dc67c2f0fb444d9b99928c494e8ba3 = L.marker(
+                [47.76860046386719, -3.4428000450134277],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_322ad86984c34ad2a3cbb120d95e261c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f2dc67c2f0fb444d9b99928c494e8ba3.setIcon(icon_322ad86984c34ad2a3cbb120d95e261c);
+        
+    
+        var popup_538fd48be6e34f94985a5563d934128a = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_91ac024b8c1a46eb95b4f647add24288 = $(`<div id="html_91ac024b8c1a46eb95b4f647add24288" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 53.399999406602646 F</li>                             <li>Force du vent : 16.27777777777778 noeuds</li>                             <li>Direction du vent : 205.55555555555554 degrée</li>                             <li>Humidité de l'air : 87.12888887193468 %</li>                         </ul>                     </div>`)[0];
+            popup_538fd48be6e34f94985a5563d934128a.setContent(html_91ac024b8c1a46eb95b4f647add24288);
+        
+
+        marker_f2dc67c2f0fb444d9b99928c494e8ba3.bindPopup(popup_538fd48be6e34f94985a5563d934128a)
+        ;
+
+        
+    
+    
+            marker_f2dc67c2f0fb444d9b99928c494e8ba3.bindTooltip(
+                `<div>
+                     LFRH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce869d13d4034e3594922190cc71bd48 = L.marker(
+                [45.78689956665039, 3.149399995803833],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_cdce0f7e336846289af1d5285537fe06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce869d13d4034e3594922190cc71bd48.setIcon(icon_cdce0f7e336846289af1d5285537fe06);
+        
+    
+        var popup_b9dea814ebdb465aa3838dae05fd10ec = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_98b116a735dc41ad9102a43beba83331 = $(`<div id="html_98b116a735dc41ad9102a43beba83331" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 48.1217390972635 F</li>                             <li>Force du vent : 22.82608695652174 noeuds</li>                             <li>Direction du vent : 174.7826086956522 degrée</li>                             <li>Humidité de l'air : 55.46391329557999 %</li>                         </ul>                     </div>`)[0];
+            popup_b9dea814ebdb465aa3838dae05fd10ec.setContent(html_98b116a735dc41ad9102a43beba83331);
+        
+
+        marker_ce869d13d4034e3594922190cc71bd48.bindPopup(popup_b9dea814ebdb465aa3838dae05fd10ec)
+        ;
+
+        
+    
+    
+            marker_ce869d13d4034e3594922190cc71bd48.bindTooltip(
+                `<div>
+                     LFLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2774f145a07441781c0ccfc13a5b7fd = L.marker(
+                [48.967201232910156, 2.4272000789642334],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_e0a69ada6e56437d899dd0924c9176a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e2774f145a07441781c0ccfc13a5b7fd.setIcon(icon_e0a69ada6e56437d899dd0924c9176a4);
+        
+    
+        var popup_f464bd56a2c04048938b8c0e2e3fa2c3 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_7eeebf4ff04046418c09f72a0c6573a5 = $(`<div id="html_7eeebf4ff04046418c09f72a0c6573a5" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 44.83478297357974 F</li>                             <li>Force du vent : 11.826086956521738 noeuds</li>                             <li>Direction du vent : 171.30434782608697 degrée</li>                             <li>Humidité de l'air : 93.4039137467094 %</li>                         </ul>                     </div>`)[0];
+            popup_f464bd56a2c04048938b8c0e2e3fa2c3.setContent(html_7eeebf4ff04046418c09f72a0c6573a5);
+        
+
+        marker_e2774f145a07441781c0ccfc13a5b7fd.bindPopup(popup_f464bd56a2c04048938b8c0e2e3fa2c3)
+        ;
+
+        
+    
+    
+            marker_e2774f145a07441781c0ccfc13a5b7fd.bindTooltip(
+                `<div>
+                     LFPB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bafaeb3c69747b6810e235b0323c284 = L.marker(
+                [43.62110137939453, 1.3789000511169434],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_5c5edb2fa08c4bd5a4f629fe3f558d2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bafaeb3c69747b6810e235b0323c284.setIcon(icon_5c5edb2fa08c4bd5a4f629fe3f558d2d);
+        
+    
+        var popup_d7a96f15262a48c09ee700702af9a841 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_ef89b547f5b54113bf4c3fee8b064da5 = $(`<div id="html_ef89b547f5b54113bf4c3fee8b064da5" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 46.49230751624474 F</li>                             <li>Force du vent : 11.717948717948717 noeuds</li>                             <li>Direction du vent : 137.94871794871796 degrée</li>                             <li>Humidité de l'air : 77.62076881604317 %</li>                         </ul>                     </div>`)[0];
+            popup_d7a96f15262a48c09ee700702af9a841.setContent(html_ef89b547f5b54113bf4c3fee8b064da5);
+        
+
+        marker_6bafaeb3c69747b6810e235b0323c284.bindPopup(popup_d7a96f15262a48c09ee700702af9a841)
+        ;
+
+        
+    
+    
+            marker_6bafaeb3c69747b6810e235b0323c284.bindTooltip(
+                `<div>
+                     LFBO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af6ec2f07bfa49a59e4222e66bd898eb = L.marker(
+                [47.277801513671875, 5.0883002281188965],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_c726c731a76f4a99a128f820466e8fd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_af6ec2f07bfa49a59e4222e66bd898eb.setIcon(icon_c726c731a76f4a99a128f820466e8fd3);
+        
+    
+        var popup_758e4630976b4dddbee3d3a4c89281c1 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_44e60f99e4a54fccb25d8c9ba076204c = $(`<div id="html_44e60f99e4a54fccb25d8c9ba076204c" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 44.25161361694336 F</li>                             <li>Force du vent : 14.387096774193548 noeuds</li>                             <li>Direction du vent : 193.8709677419355 degrée</li>                             <li>Humidité de l'air : 76.00967776390814 %</li>                         </ul>                     </div>`)[0];
+            popup_758e4630976b4dddbee3d3a4c89281c1.setContent(html_44e60f99e4a54fccb25d8c9ba076204c);
+        
+
+        marker_af6ec2f07bfa49a59e4222e66bd898eb.bindPopup(popup_758e4630976b4dddbee3d3a4c89281c1)
+        ;
+
+        
+    
+    
+            marker_af6ec2f07bfa49a59e4222e66bd898eb.bindTooltip(
+                `<div>
+                     LFSD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddcf2c04ab4845ed8ccce06e99322195 = L.marker(
+                [41.5005989074707, 9.097800254821777],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_6dd041e2376f4c758b3d074d10e17f40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ddcf2c04ab4845ed8ccce06e99322195.setIcon(icon_6dd041e2376f4c758b3d074d10e17f40);
+        
+    
+        var popup_11d662e1a5fb4f1cb91a7cb6c9bc4498 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_1e8799e1159948d19176cc551fb6a824 = $(`<div id="html_1e8799e1159948d19176cc551fb6a824" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 49.30769260113056 F</li>                             <li>Force du vent : 6.0 noeuds</li>                             <li>Direction du vent : 203.84615384615384 degrée</li>                             <li>Humidité de l'air : 76.53846065814679 %</li>                         </ul>                     </div>`)[0];
+            popup_11d662e1a5fb4f1cb91a7cb6c9bc4498.setContent(html_1e8799e1159948d19176cc551fb6a824);
+        
+
+        marker_ddcf2c04ab4845ed8ccce06e99322195.bindPopup(popup_11d662e1a5fb4f1cb91a7cb6c9bc4498)
+        ;
+
+        
+    
+    
+            marker_ddcf2c04ab4845ed8ccce06e99322195.bindTooltip(
+                `<div>
+                     LFKF
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70ee8f0122584a139ac5f316ef378b4f = L.marker(
+                [48.06890106201172, -1.7338999509811401],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_aeb7e0abcb314b3cab3518d9e046a178 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_70ee8f0122584a139ac5f316ef378b4f.setIcon(icon_aeb7e0abcb314b3cab3518d9e046a178);
+        
+    
+        var popup_33360cb970f94e89b6645f9bd15b36e7 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_b2dd73f87aff4f58926badccdf9f0695 = $(`<div id="html_b2dd73f87aff4f58926badccdf9f0695" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 50.89999961853027 F</li>                             <li>Force du vent : 14.1 noeuds</li>                             <li>Direction du vent : 187.66666666666666 degrée</li>                             <li>Humidité de l'air : 90.40366719563802 %</li>                         </ul>                     </div>`)[0];
+            popup_33360cb970f94e89b6645f9bd15b36e7.setContent(html_b2dd73f87aff4f58926badccdf9f0695);
+        
+
+        marker_70ee8f0122584a139ac5f316ef378b4f.bindPopup(popup_33360cb970f94e89b6645f9bd15b36e7)
+        ;
+
+        
+    
+    
+            marker_70ee8f0122584a139ac5f316ef378b4f.bindTooltip(
+                `<div>
+                     LFRN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f828d261d4b24efc9fb6a5b1ecd24457 = L.marker(
+                [48.44419860839844, -4.411900043487549],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_3c43163b3c834b9f973549e2577b5dc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f828d261d4b24efc9fb6a5b1ecd24457.setIcon(icon_3c43163b3c834b9f973549e2577b5dc8);
+        
+    
+        var popup_e8510a1dfa054752a10d30040e9bf540 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_986900d0752d4172a4ffc23abb07210f = $(`<div id="html_986900d0752d4172a4ffc23abb07210f" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 51.94399917602539 F</li>                             <li>Force du vent : 16.88 noeuds</li>                             <li>Direction du vent : 200.0 degrée</li>                             <li>Humidité de l'air : 89.24000183105468 %</li>                         </ul>                     </div>`)[0];
+            popup_e8510a1dfa054752a10d30040e9bf540.setContent(html_986900d0752d4172a4ffc23abb07210f);
+        
+
+        marker_f828d261d4b24efc9fb6a5b1ecd24457.bindPopup(popup_e8510a1dfa054752a10d30040e9bf540)
+        ;
+
+        
+    
+    
+            marker_f828d261d4b24efc9fb6a5b1ecd24457.bindTooltip(
+                `<div>
+                     LFRB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a8f034e000b474aa050ed85cafc6476 = L.marker(
+                [43.75809860229492, 4.411900043487549],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_e2107f16df4b43458c47c0645ba805ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a8f034e000b474aa050ed85cafc6476.setIcon(icon_e2107f16df4b43458c47c0645ba805ca);
+        
+    
+        var popup_86b540516762446abe32faec572fe155 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_64e3cefecf434ab69d1a64c2dc76e793 = $(`<div id="html_64e3cefecf434ab69d1a64c2dc76e793" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 46.400000364884086 F</li>                             <li>Force du vent : 12.478260869565217 noeuds</li>                             <li>Direction du vent : 105.65217391304348 degrée</li>                             <li>Humidité de l'air : 84.77217267907184 %</li>                         </ul>                     </div>`)[0];
+            popup_86b540516762446abe32faec572fe155.setContent(html_64e3cefecf434ab69d1a64c2dc76e793);
+        
+
+        marker_6a8f034e000b474aa050ed85cafc6476.bindPopup(popup_86b540516762446abe32faec572fe155)
+        ;
+
+        
+    
+    
+            marker_6a8f034e000b474aa050ed85cafc6476.bindTooltip(
+                `<div>
+                     LFTW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31d0b089f384400da69779acef519018 = L.marker(
+                [50.56999969482422, 3.0975000858306885],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_12f195100ed3413ca021b2133af857fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_31d0b089f384400da69779acef519018.setIcon(icon_12f195100ed3413ca021b2133af857fd);
+        
+    
+        var popup_3e4908adfa484883b64ce98069f5d9da = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_83b9f339e7244d69a42bfa7721c6382e = $(`<div id="html_83b9f339e7244d69a42bfa7721c6382e" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 42.439999675750734 F</li>                             <li>Force du vent : 16.9 noeuds</li>                             <li>Direction du vent : 183.5 degrée</li>                             <li>Humidité de l'air : 93.39724979400634 %</li>                         </ul>                     </div>`)[0];
+            popup_3e4908adfa484883b64ce98069f5d9da.setContent(html_83b9f339e7244d69a42bfa7721c6382e);
+        
+
+        marker_31d0b089f384400da69779acef519018.bindPopup(popup_3e4908adfa484883b64ce98069f5d9da)
+        ;
+
+        
+    
+    
+            marker_31d0b089f384400da69779acef519018.bindTooltip(
+                `<div>
+                     LFQQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5a68ae048e241cd87dc47ca2dc3482b = L.marker(
+                [47.972801208496094, -4.172500133514404],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_af0f4d2c2f39469ba0347d739a788173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b5a68ae048e241cd87dc47ca2dc3482b.setIcon(icon_af0f4d2c2f39469ba0347d739a788173);
+        
+    
+        var popup_e451382d474f4c488027bc88d46883c3 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e9fe0313da124a27bc12e51879aa78b9 = $(`<div id="html_e9fe0313da124a27bc12e51879aa78b9" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 52.80000008477105 F</li>                             <li>Force du vent : 14.777777777777779 noeuds</li>                             <li>Direction du vent : 210.0 degrée</li>                             <li>Humidité de l'air : 83.77000088161893 %</li>                         </ul>                     </div>`)[0];
+            popup_e451382d474f4c488027bc88d46883c3.setContent(html_e9fe0313da124a27bc12e51879aa78b9);
+        
+
+        marker_b5a68ae048e241cd87dc47ca2dc3482b.bindPopup(popup_e451382d474f4c488027bc88d46883c3)
+        ;
+
+        
+    
+    
+            marker_b5a68ae048e241cd87dc47ca2dc3482b.bindTooltip(
+                `<div>
+                     LFRQ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8df2fdf836243b1a0887cc7499df49b = L.marker(
+                [48.58890151977539, -2.0748000144958496],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_70fa94c7f1634c248aae409ad36f1ca7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e8df2fdf836243b1a0887cc7499df49b.setIcon(icon_70fa94c7f1634c248aae409ad36f1ca7);
+        
+    
+        var popup_a951084ed3314adbb1f997645058cc6c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_e757011894644e05ada04de74a3402a7 = $(`<div id="html_e757011894644e05ada04de74a3402a7" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 52.618181402033024 F</li>                             <li>Force du vent : 16.636363636363637 noeuds</li>                             <li>Direction du vent : 208.1818181818182 degrée</li>                             <li>Humidité de l'air : 82.39636507901278 %</li>                         </ul>                     </div>`)[0];
+            popup_a951084ed3314adbb1f997645058cc6c.setContent(html_e757011894644e05ada04de74a3402a7);
+        
+
+        marker_e8df2fdf836243b1a0887cc7499df49b.bindPopup(popup_a951084ed3314adbb1f997645058cc6c)
+        ;
+
+        
+    
+    
+            marker_e8df2fdf836243b1a0887cc7499df49b.bindTooltip(
+                `<div>
+                     LFRD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a895f8c46c7f47239da248969f44d860 = L.marker(
+                [48.32469940185547, 4.019999980926514],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_4ccd25ed736f46a5896a6b726313c985 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a895f8c46c7f47239da248969f44d860.setIcon(icon_4ccd25ed736f46a5896a6b726313c985);
+        
+    
+        var popup_32ef401996a74a09885a2fcebc8550e9 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_1c4ecae95fcf41db99e5533c10e653fe = $(`<div id="html_1c4ecae95fcf41db99e5533c10e653fe" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 42.38461538461539 F</li>                             <li>Force du vent : 11.461538461538462 noeuds</li>                             <li>Direction du vent : 183.07692307692307 degrée</li>                             <li>Humidité de l'air : 79.1515385554387 %</li>                         </ul>                     </div>`)[0];
+            popup_32ef401996a74a09885a2fcebc8550e9.setContent(html_1c4ecae95fcf41db99e5533c10e653fe);
+        
+
+        marker_a895f8c46c7f47239da248969f44d860.bindPopup(popup_32ef401996a74a09885a2fcebc8550e9)
+        ;
+
+        
+    
+    
+            marker_a895f8c46c7f47239da248969f44d860.bindTooltip(
+                `<div>
+                     LFQB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eaea011fb39a48caa3bb95f4a81fcac1 = L.marker(
+                [43.1880989074707, 0.0],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_160a74267b3a4382874a3b91743acb9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eaea011fb39a48caa3bb95f4a81fcac1.setIcon(icon_160a74267b3a4382874a3b91743acb9a);
+        
+    
+        var popup_024fe9fb3c094b2789a570231b35226c = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_5c1c825ad6c04023b3db8eae67147820 = $(`<div id="html_5c1c825ad6c04023b3db8eae67147820" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 45.028571174258275 F</li>                             <li>Force du vent : 4.142857142857143 noeuds</li>                             <li>Direction du vent : 128.88888888888889 degrée</li>                             <li>Humidité de l'air : 86.28618948800224 %</li>                         </ul>                     </div>`)[0];
+            popup_024fe9fb3c094b2789a570231b35226c.setContent(html_5c1c825ad6c04023b3db8eae67147820);
+        
+
+        marker_eaea011fb39a48caa3bb95f4a81fcac1.bindPopup(popup_024fe9fb3c094b2789a570231b35226c)
+        ;
+
+        
+    
+    
+            marker_eaea011fb39a48caa3bb95f4a81fcac1.bindTooltip(
+                `<div>
+                     LFBT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b7de0540bf74d39a97d19ab0a7bc0b4 = L.marker(
+                [45.53310012817383, 4.293300151824951],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_06eaf3e95c874ae398be468df5aee151 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b7de0540bf74d39a97d19ab0a7bc0b4.setIcon(icon_06eaf3e95c874ae398be468df5aee151);
+        
+    
+        var popup_109798fd4421413d8ffd97d7c5d0bb01 = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_c4205fc988e44e0290bebb9250082733 = $(`<div id="html_c4205fc988e44e0290bebb9250082733" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 48.800000508626304 F</li>                             <li>Force du vent : 12.777777777777779 noeuds</li>                             <li>Direction du vent : 196.66666666666666 degrée</li>                             <li>Humidité de l'air : 61.492221408420136 %</li>                         </ul>                     </div>`)[0];
+            popup_109798fd4421413d8ffd97d7c5d0bb01.setContent(html_c4205fc988e44e0290bebb9250082733);
+        
+
+        marker_8b7de0540bf74d39a97d19ab0a7bc0b4.bindPopup(popup_109798fd4421413d8ffd97d7c5d0bb01)
+        ;
+
+        
+    
+    
+            marker_8b7de0540bf74d39a97d19ab0a7bc0b4.bindTooltip(
+                `<div>
+                     LFMH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_152e8fc775e94e23a34e81964387e3b7 = L.marker(
+                [44.83060073852539, -0.6913999915122986],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_57f67f2de73c4aff81c86c81479f7116 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_152e8fc775e94e23a34e81964387e3b7.setIcon(icon_57f67f2de73c4aff81c86c81479f7116);
+        
+    
+        var popup_7a19cb4767e24f0c8363591e6f13a0fc = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_6012425da38049328553c501763c8ace = $(`<div id="html_6012425da38049328553c501763c8ace" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 48.274999698003136 F</li>                             <li>Force du vent : 9.833333333333334 noeuds</li>                             <li>Direction du vent : 152.3404255319149 degrée</li>                             <li>Humidité de l'air : 67.30895805358887 %</li>                         </ul>                     </div>`)[0];
+            popup_7a19cb4767e24f0c8363591e6f13a0fc.setContent(html_6012425da38049328553c501763c8ace);
+        
+
+        marker_152e8fc775e94e23a34e81964387e3b7.bindPopup(popup_7a19cb4767e24f0c8363591e6f13a0fc)
+        ;
+
+        
+    
+    
+            marker_152e8fc775e94e23a34e81964387e3b7.bindTooltip(
+                `<div>
+                     LFBD
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c8ba59d7b4340928f6bc2475ab5ceda = L.marker(
+                [42.52280044555664, 8.791099548339844],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_8128235b0e704925ad4825095116ccdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c8ba59d7b4340928f6bc2475ab5ceda.setIcon(icon_8128235b0e704925ad4825095116ccdd);
+        
+    
+        var popup_2da38ac3d4654deba35f449d4a1cec5e = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_2e3cd2ad349e4dd09bd961db8b58366c = $(`<div id="html_2e3cd2ad349e4dd09bd961db8b58366c" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 48.20000038146973 F</li>                             <li>Force du vent : 4.6 noeuds</li>                             <li>Direction du vent : 151.25 degrée</li>                             <li>Humidité de l'air : 57.693000411987306 %</li>                         </ul>                     </div>`)[0];
+            popup_2da38ac3d4654deba35f449d4a1cec5e.setContent(html_2e3cd2ad349e4dd09bd961db8b58366c);
+        
+
+        marker_3c8ba59d7b4340928f6bc2475ab5ceda.bindPopup(popup_2da38ac3d4654deba35f449d4a1cec5e)
+        ;
+
+        
+    
+    
+            marker_3c8ba59d7b4340928f6bc2475ab5ceda.bindTooltip(
+                `<div>
+                     LFKC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7062361f3614accba4055b4ef15e0e0 = L.marker(
+                [49.025001525878906, 1.2216999530792236],
+                {}
+            ).addTo(map_f8583d52a5034e259ef676f11d20c4bd);
+        
+    
+            var icon_2a9020dc6792407f95ef2f6caf824c3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7062361f3614accba4055b4ef15e0e0.setIcon(icon_2a9020dc6792407f95ef2f6caf824c3e);
+        
+    
+        var popup_ea7a5227c6aa4d898bcf17347fa51d5f = L.popup({"maxWidth": 300, "minWidth": 300});
+
+        
+            var html_9c1856600cd54d7ab90fd15728c14f03 = $(`<div id="html_9c1856600cd54d7ab90fd15728c14f03" style="width: 100.0%; height: 100.0%;">                         <b> informations de periode</b></br></br>                         <ul>                             <li>Temperature réelle: 42.14545440673828 F</li>                             <li>Force du vent : 13.909090909090908 noeuds</li>                             <li>Direction du vent : 180.9090909090909 degrée</li>                             <li>Humidité de l'air : 94.55000027743253 %</li>                         </ul>                     </div>`)[0];
+            popup_ea7a5227c6aa4d898bcf17347fa51d5f.setContent(html_9c1856600cd54d7ab90fd15728c14f03);
+        
+
+        marker_d7062361f3614accba4055b4ef15e0e0.bindPopup(popup_ea7a5227c6aa4d898bcf17347fa51d5f)
+        ;
+
+        
+    
+    
+            marker_d7062361f3614accba4055b4ef15e0e0.bindTooltip(
+                `<div>
+                     LFOE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
