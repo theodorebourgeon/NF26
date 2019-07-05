@@ -1,4 +1,4 @@
-# NF26 - Darawarehouse et stockage en haute volumétrie
+# NF26 - Datawarehouse et stockage en haute volumétrie
 
 Credits:   6 
 Cours:  2h/semaines 
